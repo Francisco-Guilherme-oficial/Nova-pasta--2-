@@ -8,20 +8,12 @@
 <body>
     <!-- Cabeçalho -->
     <header>
-        <h1>Meu Instagram</h1>
-        <img src="logo.png" alt="Logo do Instagram">
+        <ul>
+            {% for usuario in usuarios %}
+            <li>{{usuario.nome}}: {{usuario.idade}}</li>
+            {% endfor %}
+        </u>
     </header>
-
-    <!-- Feed de Fotos -->
-    <section>
-        <img src="foto1.jpg" alt="Foto 1">
-        <img src="foto2.jpg" alt="Foto 2">
-        <!-- Adicione mais fotos aqui -->
-    </section>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>© 2024 Meu Instagram</p>
     </footer>
 </body>
 </html>
